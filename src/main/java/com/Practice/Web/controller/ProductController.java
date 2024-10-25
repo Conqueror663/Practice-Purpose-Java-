@@ -3,13 +3,13 @@ package com.Practice.Web.controller;
 import com.Practice.Web.model.Product;
 import com.Practice.Web.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/product")
+//@CrossOrigin//for connecting different port like front end and back-end
 public class ProductController {
 
     @Autowired

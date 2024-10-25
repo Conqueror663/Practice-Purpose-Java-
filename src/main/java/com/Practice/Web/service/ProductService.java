@@ -1,16 +1,13 @@
 package com.Practice.Web.service;
+import com.Practice.Web.IServices.IProductServices;
 import com.Practice.Web.model.Product;
 import com.Practice.Web.repositary.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 @Service
-public class ProductService {
+public class ProductService implements IProductServices {
 
 
     @Autowired

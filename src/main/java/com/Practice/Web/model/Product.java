@@ -10,10 +10,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
-@Data
+@Data//Basic methods like get/setter/tostring etc
 @AllArgsConstructor
-@Entity
-@Component
+@Entity //create database like table name etc
+@Component //used for autowiring and is responsible
 @NoArgsConstructor
 public class Product {
 
