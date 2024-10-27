@@ -8,9 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class StudentCourse {
-    private String createdBy = "Usman";
-    private String createdDate = "26 OCT";
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long studentCourseId;

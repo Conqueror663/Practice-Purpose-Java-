@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Program {
-    private String createdBy = "Usman";
-    private String createdDate = "26 OCT";
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
