@@ -4,23 +4,24 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 @Data
 @NoArgsConstructor
 @Entity
-public class Student {
-
+public class Subject {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long studentId;
+    private Long subjectId;
 
     @Column(nullable = false)
-    private String username;
+    private String name;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String password;
+    private SubjectType type; // "CORE" or "ELECTIVE"
 
-    @Column(nullable = false, unique = true)
-    private String registrationNumber;
+
+    public enum SubjectType {
+        CORE, ELECTIVE
+    }
 
 }
